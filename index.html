@@ -164,6 +164,13 @@
   .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-muted); }
   .swatch { width: 11px; height: 11px; border-radius: 50%; flex: none; }
 
+  /* ---------- Decision framework ---------- */
+  .decision { padding-top: 40px; border-top: 1px solid var(--border); }
+  .decision h3.section-label { margin-top: 0; margin-bottom: 18px; }
+  .decision-steps { display: flex; flex-direction: column; gap: 14px; max-width: 70ch; }
+  .decision-steps p { margin: 0; }
+  .decision-steps .num { font-family: 'Fraunces', Georgia, serif; font-weight: 640; color: var(--brass-strong); margin-right: 6px; }
+
   /* ---------- Glance table ---------- */
   .glance { padding-top: 56px; padding-bottom: 56px; }
   .glance h2 { font-size: clamp(1.5rem, 3vw, 1.9rem); margin-bottom: 6px; }
@@ -277,6 +284,14 @@
     <div class="legend-item"><span class="swatch" style="background:var(--route-tahoe)"></span>Route 03 — Alameda + Tahoe</div>
     <div class="legend-item"><span class="swatch" style="background:var(--route-nola)"></span>Route 04 — New Orleans</div>
     <div class="legend-item"><span class="swatch" style="background:var(--route-spain)"></span>Route 05 — Southern Spain</div>
+  </div>
+</div>
+
+<div class="wrap decision">
+  <h3 class="section-label">Two things decide this before anything else</h3>
+  <div class="decision-steps">
+    <p><span class="num">1.</span>Skiing, or not. If it's in, that's Tahoe — nothing else on this list has it.</p>
+    <p><span class="num">2.</span>If it's not skiing: whether LALA wants room to see Siddu and Francis' family as part of the same trip, not a separate one. Mexico, Costa Rica, Tahoe, and New Orleans are all close enough to the US that this can be a natural add-on before or after. Spain isn't — it would be its own dedicated trip.</p>
   </div>
 </div>
 
@@ -518,7 +533,7 @@
     </div>
 
     <h3 class="section-label">Where to stay</h3>
-    <p class="measure" style="color:var(--text-muted); margin-bottom:18px;">Our place in Alameda isn't big enough to host all eight of us, so LALA and the grandparents will need their own rental for the Bay Area stretch.</p>
+    <p class="measure" style="color:var(--text-muted); margin-bottom:18px;">Our place in Alameda isn't big enough to host all eight of us, so LALA and the grandparents will need their own rental for the Bay Area stretch. For the mountain stretch, South Lake Tahoe is the easy default — the Gondola and the sno-park below are both built around it. Donner Lake/Truckee is a real alternative if Sugar Bowl is the ski venue (it's the mountain Stephen's most comfortable teaching on), but it sits roughly 45 minutes further from South Lake's gondola and sno-park, so a Donner base means more driving if the group splits between mountain and lake activities on a given day.</p>
     <div class="lodging-grid">
       <div class="lodge-card">
         <div class="place">Alameda / San Francisco</div>
@@ -537,6 +552,12 @@
         <h4>The Landing Resort &amp; Spa (alternative)</h4>
         <p>Lakefront, full-service, spa on site — a good fallback if a large enough rental isn't available for your exact dates.</p>
         <div class="rate">~$400–700/night + resort fee</div>
+      </div>
+      <div class="lodge-card">
+        <div class="place">Donner Lake / Truckee (alternative)</div>
+        <h4>A rental near Donner Lake</h4>
+        <p>Puts you minutes from Sugar Bowl, Donner Memorial, and historic downtown Truckee. The tradeoff is the drive back to South Lake Tahoe for the gondola and the sno-park.</p>
+        <div class="rate">Closer to Sugar Bowl · farther from South Lake</div>
       </div>
     </div>
 
@@ -560,7 +581,7 @@
         <thead><tr><th style="width:70px">Day</th><th>Focus</th><th>Details</th></tr></thead>
         <tbody>
           <tr><td class="day-num">4</td><td>Drive to Tahoe</td><td>Build in a buffer day — winter storms occasionally close I-80 or Highway 50.</td></tr>
-          <tr><td class="day-num">5</td><td>Ski/ride day one</td><td>A group or private lesson to get Ayaan and Laila up to speed on the basics at Heavenly or Palisades; Stephen takes over coaching by the afternoon.<span class="split">Grandparents and the baby: the Heavenly Gondola, 12 minutes up, then lunch at the mid-station deck with a lake view.</span></td></tr>
+          <tr><td class="day-num">5</td><td>Ski/ride day one</td><td>A group or private lesson to get Ayaan and Laila up to speed on the basics — Heavenly or Palisades if based in South Lake, Sugar Bowl if based near Donner. Stephen takes over coaching by the afternoon.<span class="split">Grandparents and the baby: the Heavenly Gondola, 12 minutes up, then lunch at the mid-station deck with a lake view (a South Lake base makes this an easy add-on; from Donner it's more of a dedicated trip).</span></td></tr>
           <tr><td class="day-num">6</td><td>Ski/ride day two</td><td>Putting the lesson into practice on easier runs, Stephen leading.<span class="split">Grandparents and the baby: a slower morning, maybe the spa.</span></td></tr>
           <tr><td class="day-num">7</td><td>Snow play, together</td><td>Taylor Creek Sno-Park for gentle sledding — easy for every age in the group at once, baby bundled into a pulk sled.</td></tr>
           <tr><td class="day-num">8</td><td>Donner history</td><td>Donner Memorial State Park in Truckee — a real, well-told piece of Western history at the museum (skip with the baby, good for tweens and adults). Afternoon: an easy wander through historic downtown Truckee, hot chocolate by the old rail depot.</td></tr>
